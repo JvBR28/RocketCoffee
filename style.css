@@ -102,3 +102,18 @@ body * {
   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
   color: var(--backgrond);
 }
+
+/* Imagem do canto inferior da página */
+#blur-1 {
+  position: absolute;
+  z-index: -100;
+  width: 555px;
+}
+
+/* Imagem Principal */
+#main-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
