@@ -16,6 +16,7 @@
 body {
   background: var(--backgrond);
   height: 100vh;
+  overflow-x: hidden;
 }
 
 body * {
@@ -23,14 +24,28 @@ body * {
   color: var(--text-color);
 }
 
+/* Imagem do canto da página */
+
+#blur-2 {
+ /* border: solid 1px red; */
+  left: 130vh;
+  top: 0;
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  z-index: -100;
+}
+
+/* Header */
+
 #navigation {
-  border: solid 1px red;
+ /* border: solid 1px red; */
   margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 130px; 
-  z-index: 1000;
+  gap: 130px;
+  z-index: 1000; 
 }
 
 #navigation ul {
@@ -42,6 +57,7 @@ body * {
 
 #navigation li {
   display: flex;
+  cursor: pointer;
 }
 
 #navigation button {
@@ -53,5 +69,36 @@ body * {
   font-size: 12px;
   line-height: 15px;
   background: var(--backgrond);
+  cursor: pointer;
 }
 
+#navigation button:hover {
+  background: var(--button);
+  border: 1px solid var(--backgrond);
+  transition: .2s;
+}
+
+/* Nome da Página */
+
+#title {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#first-title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 109px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#subtitle {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 109px;
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  color: var(--backgrond);
+}
