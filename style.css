@@ -28,11 +28,11 @@ body * {
 
 #blur-2 {
  /* border: solid 1px red; */
-  left: 130vh;
   top: 0;
+  right: 0;
   position: absolute;
-  height: 600px;
-  width: 600px;
+  width: 555px;
+  height: 555px;
   z-index: -100;
 }
 
@@ -45,7 +45,8 @@ body * {
   align-items: center;
   justify-content: center;
   gap: 130px;
-  z-index: 1000; 
+  z-index: 1000;
+  min-width: 200px; 
 }
 
 #navigation ul {
@@ -115,5 +116,22 @@ body * {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+@media(max-width: 800px) {
+  #navigation {
+    gap: 20px; 
+  }
+
+  #navigation ul {
+    gap: 15px; 
+  }
+
+  #first-title {
+    font-size: 66px;
+  }
+
+  #subtitle {
+    font-size: 66px;
+  }
 }
