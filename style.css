@@ -28,9 +28,9 @@ body * {
 
 #blur-2 {
  /* border: solid 1px red; */
+  position: absolute; 
   top: 0;
   right: 0;
-  position: absolute;
   width: 555px;
   height: 555px;
   z-index: -100;
@@ -109,6 +109,7 @@ body * {
   position: absolute;
   z-index: -100;
   width: 555px;
+  height: 70vh;
 }
 
 /* Imagem Principal */
@@ -116,6 +117,17 @@ body * {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#main-img {
+  width: 555px;
+  height: 70vh;
+}
+
+@media only screen and (min-width: 551px) {
+  #navbar_mobile, #header-mobile, #titulo-mobile, #button-mobile, #title-mobile, #first-title-mobile, #subtitle-mobile, #coffee-mobile, #blur-mobile {
+    display: none;
+  }
 }
 
 @media(max-width: 800px) {
@@ -133,5 +145,93 @@ body * {
 
   #subtitle {
     font-size: 66px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* Visibilidade */
+  #blur-2, #navigation, #title, #blur-1, #main-image {
+    display: none;
+  }
+
+  /* Header */
+  #navbar_mobile {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px gray solid;
+  }
+
+  #header-mobile {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 15px;
+  }
+
+  /* Titulo Header */
+  #titulo-mobile {
+    margin-top: 88px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+  }
+
+  #button-mobile {
+    margin-top: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    width: 172px;
+    height: 37px;
+    border: 1px solid var(--button);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    background: var(--backgrond);
+    cursor: pointer;
+  }
+
+  #title-mobile {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+  #first-title-mobile {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+  #subtitle-mobile {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 50px;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    color: var(--backgrond);
+  }
+
+  #coffee-mobile {
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+    height: 350px;
+  }
+
+  #blur-mobile {
+    position: absolute;
+    left: 0;
+    z-index: -1000;
+    width: 100%;
+    height: 430px;
   }
 }
