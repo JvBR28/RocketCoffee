@@ -124,6 +124,7 @@ body * {
   height: 70vh;
 }
 
+/* Responsividade Parcial */
 @media(max-width: 830px) {
   #navigation {
     gap: 20px; 
@@ -148,6 +149,7 @@ body * {
   }
 }
 
+/* Responsividade Mobile */
 @media only screen and (max-width: 550px) {
   /* Visibilidade */
   #blur-2, #navigation, #menu, #title, #blur-1, #main-image {
@@ -166,12 +168,12 @@ body * {
     display: flex;
     justify-content: space-between;
     margin: auto 15px;
+    align-items: center;
   }
 
   #btn-mobile {
     position: absolute;
     right: 20px;
-    top: 40px;
   }
 
   /* Titulo Header */
@@ -202,6 +204,7 @@ body * {
     cursor: pointer;
   }
 
+  /* Title Mobile */
   #title-mobile {
     margin-top: 80px;
     display: flex;
@@ -226,6 +229,7 @@ body * {
     color: var(--backgrond);
   }
 
+  /* Imagem do café */
   #coffee-mobile {
     position: absolute;
     margin-top: 80px;
@@ -233,6 +237,7 @@ body * {
     height: 350px;
   }
 
+  /* Imagem do Blur */
   #blur-mobile {
     position: absolute;
     left: 0;
@@ -241,6 +246,7 @@ body * {
     height: 430px;
   }
 
+  /* Menu para o Mobile */
   #menu {
     display: block;
     position: absolute;
@@ -273,5 +279,4 @@ body * {
   #menu li:hover {
     border-left: 5px solid var(--button);
   }
-
 }
