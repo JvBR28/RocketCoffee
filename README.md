@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img alt="projeto RocketCoffee-mobile" src=".github/preview_mobile.jpg" width="75%">
+  <img alt="projeto RocketCoffee-mobile" src=".github/preview_mobile.jpg" width="50%">
 </p>
 
 ## 🚀 Tecnologias
