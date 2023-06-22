@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Projeto Portfólio é uma homepage para uma marca de café com responsividade para mobile.
+O Projeto RocketCoffee é uma homepage para uma marca de café com responsividade para mobile.
 
 ## 🔖 Layout
 
